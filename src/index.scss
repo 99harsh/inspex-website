@@ -1,0 +1,45 @@
+@import "./assets//global.scss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+body {
+  margin: 0px !important;
+}
+
+.inw-main-container {
+  position: absolute;
+  width: 100%;
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+}
+
+.inw-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inw-col-1 {
+  flex: 1;
+}
+
+.inw-primary-button {
+  background-color: $primary-blue-1;
+  padding: 10px !important;
+  border: 0px !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+@import "../../assets/global.scss";
+
+.inw-header-container {
+    padding: 1rem;
+    border-bottom: 1px solid $primary-dark-1;
+    .inwlogo-container {
+        .inw-pre-logo {
+            .inw-prelogo {
+                color: $primary-violet-1;
+                font-weight: 900;
+                padding-right: .5rem;
+            }
+
+            .inw-branding {
+                background: radial-gradient(100.24% 97.1% at 5.56% 79.01%, #eb568e 0, #144ee3 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: #0000;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+    .inw-header-btn-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
