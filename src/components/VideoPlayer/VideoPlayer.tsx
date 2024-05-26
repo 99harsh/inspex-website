@@ -1,9 +1,7 @@
 import "./Style.scss";
 import { useEffect, useRef } from 'react';
 
-import HomeVideo from '../../assets/videos/homepage.mp4'
-
-const VideoPlayer = () => {
+const VideoPlayer = ({videoURL}:any) => {
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -21,7 +19,7 @@ const VideoPlayer = () => {
             height="auto"
             muted
         >
-            <source src={HomeVideo} type="video/mp4" />
+            <source src={videoURL} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     );

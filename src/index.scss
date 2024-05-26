@@ -22,8 +22,9 @@ body {
 
 .inw-main-container {
   position: absolute;
-  width: 100%;
-  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+  width: 100%; //63e
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #000 100%);
+
 }
 
 .inw-flex-row {
@@ -43,3 +44,4 @@ body {
   border-radius: 20px !important;
   cursor: pointer;
 }
+
