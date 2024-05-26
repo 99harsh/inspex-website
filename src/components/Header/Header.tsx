@@ -11,9 +11,9 @@ const Header = () => {
                 <div className='inw-inspex-name'>
                 </div>
             </div>
-            <div className='inw-col-1 inw-header-btn-container'>
+            {/* <div className='inw-col-1 inw-header-btn-container'>
                 <button className="inw-primary-button">Github</button>
-            </div>
+            </div> */}
         </div>
     )
 }

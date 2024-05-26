@@ -1,0 +1,15 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    .footer-text {
+        font-size: .875rem;
+        .heart-icon {
+            height: 1rem;
+            margin: 0 5px;
+            width: 1rem;
+        }
+    }
+
+}
