@@ -18,6 +18,17 @@ import Accuracy from '../../assets/images/accuracy.svg';
 import Creativity from '../../assets/images/creativity.svg';
 
 const Content = () => {
+    const redirectStore = () => {
+        const userAgent = navigator.userAgent;
+        if (userAgent.indexOf("Edg") > -1) {
+            window.open("https://microsoftedge.microsoft.com/addons/detail/inspex/jpfhmndjabpklbljmlmcmehplgbonfpd", "_blank")
+        } else if (userAgent.indexOf("Chrome") > -1) {
+            window.open("https://chromewebstore.google.com/detail/inspex/pdmcmleecgmelbbfopeadlkdicenkjgg", "_blank")
+        } else {
+            alert("Coming Soon!");
+        }
+    };
+
     return (
         <div className="inw-section-container">
             <div className="inw-branding-container">
@@ -28,9 +39,7 @@ const Content = () => {
                     <span className="inw-sub-branding">Inspex.dev is a powerful yet user-friendly browser extension designed to enhance your web development and design experience. It integrates seamlessly with your browser, offering a robust set of tools to inspect, modify, and style your website elements effortlessly, right from the front end.</span>
                 </div>
                 <div className="inw-getstarted-container">
-                    <button className="inw-primary-button" onClick={() => {
-                        window.open("https://chromewebstore.google.com/detail/inspex/pdmcmleecgmelbbfopeadlkdicenkjgg", "_blank")
-                    }}>
+                    <button className="inw-primary-button" onClick={redirectStore}>
                         <span className="inw-getnow-text">Get it now</span>
                         <img src={RightArrowIcon} className="inw-getnow-icon" />
                     </button>
@@ -39,16 +48,25 @@ const Content = () => {
                     {/* <div className="inw-browser-icon-innercontainer">
                         <img src={ChromeIcon} className="inw-broswer-icon" />
                     </div> */}
-                    <div className="inw-coming-soon-wrapper inw-live-wrapper">
+                    <div className="inw-coming-soon-wrapper inw-live-wrapper" onClick={redirectStore}>
                         <div className="inw-browser-icon-innercontainer">
-                        <img src={ChromeIcon} className="inw-broswer-icon" />
+                            <img src={ChromeIcon} className="inw-broswer-icon" />
 
                         </div>
                         <div className="inw-coming-soon-text">
                             <span>Live</span>
                         </div>
                     </div>
-                    <div className="inw-coming-soon-wrapper">
+                    <div className="inw-coming-soon-wrapper inw-live-wrapper" onClick={redirectStore}>
+                        <div className="inw-browser-icon-innercontainer">
+                            <img src={EdgeIcon} className="inw-broswer-icon" />
+
+                        </div>
+                        <div className="inw-coming-soon-text">
+                            <span>Live</span>
+                        </div>
+                    </div>
+                    {/* <div className="inw-coming-soon-wrapper">
                         <div className="inw-browser-icon-innercontainer">
                             <img src={EdgeIcon} className="inw-broswer-icon" />
 
@@ -56,7 +74,7 @@ const Content = () => {
                         <div className="inw-coming-soon-text">
                             <span>Coming Soon</span>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
